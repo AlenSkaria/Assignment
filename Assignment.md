@@ -47,7 +47,7 @@ DESC Department
 ![Alt text](/AssignmentImg/0020.png "student")
 
 
-Q3:
+Q3: 
 ```
 ALTER TABLE Employee ADD CONSTRAINT emp_ref PRIMARY KEY(Empno)
 ALTER TABLE Employee MODIFY Empno NUMBER(3,0)
