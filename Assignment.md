@@ -163,10 +163,92 @@ ALTER TABLE Customer MODIFY Address VARCHAR2(100)
 DESC Customer
 ```
 ![Alt text](/AssignmentImg/1001.png "student")
+
+
+
 #### Question 12:
+```
+CREATE TABLE Course(
+Courseid VARCHAR2(25),
+StreamID VARCHAR2(20),
+Description VARCHAR2(200),
+Fees NUMBER
+)
+
+DESC Course
+
+CREATE TABLE Batch(
+BatchID VARCHAR2(30),
+CourseID VARCHAR2(5),
+BatchName CHAR
+)
+
+DESC Batch
+
+CREATE TABLE Students(
+StudID VARCHAR2(20),
+LastName VARCHAR2(25),
+MiddleName VARCHAR2(30),
+FirstName VARCHAR2(20),
+BatchID VARCHAR2(30),
+Grade CHAR
+)
+
+DESC Students
+```
+![Alt text](/AssignmentImg/1012.png "student")
+![Alt text](/AssignmentImg/10122.png "student")
+![Alt text](/AssignmentImg/10123.png "student")
+
+
 #### Question 13:
+```
+ALTER TABLE Course ADD CONSTRAINT pk1 PRIMARY KEY(Courseid)
+
+ALTER TABLE Course ADD Title VARCHAR2(40)
+
+DESC Course
+
+```
+![Alt text](/AssignmentImg/1013.png "student")
 #### Question 14:
+
+```
+ALTER TABLE Batch ADD CONSTRAINT fk FOREIGN KEY(CourseID) REFERENCES Course(Courseid)
+
+DESC Batch 
+
+```
+![Alt text](/AssignmentImg/1014.png "student")
 #### Question 15:
+```
+ALTER TABLE Students ADD DOB DATE
+ALTER TABLE Students ADD Address VARCHAR2(50)
+ALTER TABLE Students ADD City VARCHAR2(20)
+ALTER TABLE Students ADD State VARCHAR2(2)
+ALTER TABLE Students ADD Zipcode VARCHAR2(9)
+ALTER TABLE Students ADD Telephone VARCHAR2(10)
+ALTER TABLE Students ADD Fax VARCHAR2(10)
+ALTER TABLE Students ADD Email VARCHAR2(30)
+
+DESC Students 
+```
+![Alt text](/AssignmentImg/1015.png "student")
+
 #### Question 16:
+```
+ALTER TABLE Students DROP COLUMN MiddleName 
+
+DESC Students 
+```
+![Alt text](/AssignmentImg/1016.png "student")
 #### Question 17:
+```
+RENAME Students TO Participant
+
+DESC Participant
+```
+![Alt text](/AssignmentImg/1017.png "student")
+
+
 
