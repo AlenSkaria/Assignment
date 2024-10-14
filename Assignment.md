@@ -249,7 +249,7 @@ RENAME Students TO Participant
 
 DESC Participant
 ```
-![Alt text](/AssignmentImg/1017.png "student")
+![Alt text](/AssignmentImg/10117.png "student")
 
 
 
