@@ -230,10 +230,11 @@ ALTER TABLE Students ADD Zipcode VARCHAR2(9)
 ALTER TABLE Students ADD Telephone VARCHAR2(10)
 ALTER TABLE Students ADD Fax VARCHAR2(10)
 ALTER TABLE Students ADD Email VARCHAR2(30)
+ALTER TABLE Students ADD CONSTRAINT pkst PRIMARY KEY(StudID)
 
 DESC Students 
 ```
-![Alt text](/AssignmentImg/1015.png "student")
+![Alt text](/AssignmentImg/10115.png "student")
 
 #### Question 16:
 ```
