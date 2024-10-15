@@ -191,7 +191,8 @@ LastName VARCHAR2(25),
 MiddleName VARCHAR2(30),
 FirstName VARCHAR2(20),
 BatchID VARCHAR2(30),
-Grade CHAR
+Grade CHAR,
+CONSTRAINT ck CHECK(GRADE IN('A','A+','A-',B,'B+','B-','C','C+','C-','D','D+','D-')) 
 )
 
 DESC Students
