@@ -69,3 +69,32 @@ JOIN course
 ON batch.courseid = course.courseid
 ```
 ![Alt text](/Assignment4/img/13.png "student")
+
+
+Q14:
+```
+SELECT participant.firstname, batch.batchname 
+FROM participant 
+JOIN batch 
+ON participant.batchid = batch.batchid 
+```
+
+![Alt text](/Assignment4/img/14.png "student")
+
+Q15
+```
+SELECT participant.firstname, course.title 
+FROM batch 
+LEFT JOIN participant 
+ON participant.batchid = batch.batchid 
+INNER JOIN course 
+ON batch.courseid = course.courseid
+```
+![Alt text](/Assignment4/img/15.png "student")
+
+
+Q16
+```
+
+```
+
