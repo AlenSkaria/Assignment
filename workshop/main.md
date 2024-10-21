@@ -93,13 +93,14 @@ select * from salestest
 ### FINAL OUTPUT
 
 ```
-select salestest.salesid,itemtest.itemname As "Item",shoptest.shopname AS "Shop",salestest.quantity AS "Quantity",unittest.unit As "Unit",salestest.unitprice AS "Unit Price(Rs.)",salestest.salesdate AS "Sales Date" FROM salestest 
+select salestest.salesid,itemtest.itemname,shoptest.shopname,salestest.quantity,unittest.unit,salestest.unitprice,salestest.salesdate FROM salestest 
 INNER JOIN itemtest
 ON salestest.itemid = itemtest.itemid
 INNER JOIN shoptest
 ON salestest.shopid = shoptest.shopid
 INNER JOIN unittest
 ON salestest.unitid = unittest.unitid
+
 ```
 
 
