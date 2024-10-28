@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: poppins;
+}
+.top {
+  height: 40rem;
+  width: 100%;
+  background-image: url("https://images.unsplash.com/photo-1531515344754-73824e1d4c2d?q=80&w=2012&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 3rem 8rem;
+  column-gap: 12rem;
+}
+.logo {
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+.nav_links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.nav_links a {
+  text-decoration: none;
+  color: #111111;
+  padding: 4px 15px;
+  border-radius: 20px;
+  background-color: #50505005;
+}
+.nav_links a:hover {
+  text-decoration: none;
+  color: #fff;
+  padding: 4px 15px;
+  border-radius: 20px;
+  background-color: #111111;
+}
+.spl {
+  background-color: #111111;
+  color: #fff;
+  padding: 4px 15px;
+  border-radius: 20px;
+}
+
+.launching {
+  display: flex;
+  flex-direction: column;
+  margin: 5rem 0;
+  gap: 0.8rem;
+  justify-content: space-between;
+  width: 30%;
+  padding: 3rem 8rem;
+  column-gap: 12rem;
+}
+.abutton {
+  cursor: pointer;
+  background-color: #111111;
+  color: #fff;
+  width: fit-content;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+}
+.abutton:hover {
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #111;
+  width: fit-content;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+}
+.launching h1 {
+  font-size: 3rem;
+}
+.secondtitle {
+  font-weight: 500;
+}
+
+.content {
+  padding: 3rem 8rem;
+}
+
+.content .title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cards {
+  padding: 3rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  text-align: center;
+}
+.cards .card img {
+  width: 20rem;
+  height: 20rem;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.text {
+  padding: 0.5rem 1rem;
+}
+.text h1 {
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+.text p {
+  font-size: 0.9rem;
+}
+.exp_button {
+  cursor: pointer;
+  background-color: #fff;
+  color: #111;
+  margin: 1.5rem auto;
+  width: fit-content;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  border: 1px solid #111;
+}
+.exp_button:hover {
+  background-color: #111;
+  color: #fff;
+}
