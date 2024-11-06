@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee</title>
+    <link rel="stylesheet" href="../css/employeePage.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="main_contaniner container">
+      <div class="main_nav">
+        <h3>Travel Request</h3>
+        <div class="logout" onclick="logOut()"><p>logout</p></div>
+      </div>
+      <div class="sub_nav">
+        <div class="form" onclick="showPage('form')"><p>Form</p></div>
+        <div class="viewRequest" onclick="showPage('vr')">
+          <p>View Request</p>
+        </div>
+      </div>
+      <div id="trform">
+        <div class="travelForm">
+          <h4 class="trTitle">Travel Request Form</h4>
+          <div class="main_form">
+            <form onsubmit="submitForm(event)">
+              <div>
+                <label>Emp ID</label>
+                <input
+                  type="text"
+                  id="empid"
+                  placeholder="Employee Id"
+                  required
+                />
+              </div>
+              <div>
+                <label>Emp Name</label>
+                <input type="text" id="empName" placeholder="Employee Name" />
+              </div>
+              <div>
+                <label>Project</label>
+                <input type="text" id="project" placeholder="Project" />
+              </div>
+              <div>
+                <label>Cause For Travel</label>
+                <input type="text" id="cause" placeholder="cause" />
+              </div>
+              <div>
+                <label>Source</label>
+                <input type="text" id="source" placeholder="source" />
+              </div>
+              <div>
+                <label>Destination</label>
+                <input type="text" id="destination" placeholder="destination" />
+              </div>
+              <div>
+                <label>From Date</label>
+                <input type="date" id="fromDate" />
+              </div>
+
+              <div>
+                <label>To Date</label>
+                <input type="date" id="toDate" />
+              </div>
+              <div>
+                <label>No of days</label>
+                <input type="text" id="totalDays" disabled placeholder="days" />
+              </div>
+              <div>
+                <label>Mode of Travel</label>
+                <input type="text" id="modeOfTravel" placeholder="Mode" />
+              </div>
+              <div>
+                <label>Priority</label>
+                <select id="priority">
+                  <option value="Normal">Normal</option>
+                  <option value="Critical">Critical</option>
+                </select>
+              </div>
+              <div style="width: 100%; display: flex; justify-content: center">
+                <button>Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div id="request" class="hide">
+        <h4 class="trTitle">Your Travel Requests</h4>
+        <!-- test -->
+        <div id="requestStatusContainer">
+          <div>
+            <h5>
+              <a
+                data-bs-toggle="collapse"
+                href="#pendingRequests"
+                role="button"
+              >
+                Pending Requests
+              </a>
+            </h5>
+            <div class="collapse" id="pendingRequests"></div>
+          </div>
+
+          <div>
+            <h5>
+              <a
+                data-bs-toggle="collapse"
+                href="#approvedRequests"
+                role="button"
+              >
+                Approved Requests
+              </a>
+            </h5>
+            <div class="collapse" id="approvedRequests"></div>
+          </div>
+
+          <div>
+            <h5>
+              <a
+                data-bs-toggle="collapse"
+                href="#rejectedRequests"
+                role="button"
+              >
+                Rejected Requests
+              </a>
+            </h5>
+            <div class="collapse" id="rejectedRequests"></div>
+          </div>
+          <div>
+            <h5>
+              <a data-bs-toggle="collapse" href="#onHoldRequests" role="button">
+                On Hold Requests
+              </a>
+            </h5>
+            <div class="collapse" id="onHoldRequests"></div>
+          </div>
+        </div>
+
+        <!-- test -->
+
+        <div id="pendingRequests"></div>
+        <div id="approvedRequests"></div>
+        <div id="rejectedRequests"></div>
+      </div>
+      <div id="display" class="hide"></div>
+    </div>
+
+    <script src="../js/employeePage.js"></script>
+  </body>
+</html>

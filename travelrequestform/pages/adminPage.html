@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin</title>
+    <link rel="stylesheet" href="../css/adminPage.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="main_contaniner container">
+      <div class="main_nav">
+        <h3>Travel Request | Admin</h3>
+        <div class="logout" onclick="logOut()"><p>logout</p></div>
+      </div>
+    </div>
+
+    <div class="tab-container">
+      <button onclick="setFilter('all')">All</button>
+      <button onclick="setFilter('approved')">Approved</button>
+      <button onclick="setFilter('rejected')">Rejected</button>
+      <button onclick="setFilter('pending')">Pending</button>
+      <button onclick="setFilter('onhold')">On Hold</button>
+    </div>
+
+    <div
+      id="categoryTitle"
+      class="container"
+      style="margin-top: 1rem; margin-bottom: 2rem"
+    >
+      <h3>All Requests</h3>
+    </div>
+    <div id="requestsContainer" class="container"></div>
+
+    <div id="display" class="hide container"></div>
+    <script src="../js/adminPage.js"></script>
+  </body>
+</html>
